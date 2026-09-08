@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desk Mate | Strategy. Marketing. Growth. — Full-Service Marketing Agency</title>
+  <meta name="description"
+    content="Desk Mate is a full-service marketing agency specializing in digital marketing, lead generation, SEO, web development, AI automation, video editing, and app design for Australian businesses. Strategy. Marketing. Growth.">
+  <meta name="keywords"
+    content="marketing agency, digital marketing, lead generation, SEO, web development, AI automation, video editing, app design, virtual assistant, telemarketing, Australian business, Desk Mate">
+  <meta property="og:title" content="Desk Mate | Strategy. Marketing. Growth.">
+  <meta property="og:description" content="Full-service marketing agency driving growth for Australian businesses.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ========== PRELOADER ========== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">DM</div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Desk Mate Home">
+        <div class="logo-icon">
+          <span class="logo-d">D</span><span class="logo-m">M</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-name">DESK <span class="logo-highlight">MATE</span></span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon theme-icon-dark"></i>
+          <i class="fa-solid fa-sun theme-icon-light"></i>
+        </button>
+        <a href="#contact" class="btn btn-nav-cta">Get Quote</a>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <img src="assets/hero-bg.jpg" alt="Desk Mate call center" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <canvas id="heroParticles"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge animate-hero" style="--delay: 0.2s">
+        <i class="fa-solid fa-rocket"></i>
+        <span>Trusted 10+ Australian Businesses</span>
+      </div>
+      <h1 class="hero-title animate-hero" style="--delay: 0.4s">
+        Your Premier<br>
+        <span class="gradient-text">Marketing</span> Partner
+      </h1>
+      <p class="hero-subtitle animate-hero" style="--delay: 0.6s">
+        Driving measurable growth for Australian businesses through digital marketing, lead generation, web development,
+        AI automation, and end-to-end creative solutions.
+      </p>
+      <div class="hero-tagline animate-hero" style="--delay: 0.8s">
+        <span>Strategy</span>
+        <span class="tagline-dot"></span>
+        <span>Marketing</span>
+        <span class="tagline-dot"></span>
+        <span>Growth</span>
+      </div>
+      <div class="hero-ctas animate-hero" style="--delay: 1s">
+        <a href="#contact" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-rocket"></i> Get Started
+        </a>
+        <a href="#services" class="btn btn-outline btn-lg">
+          <i class="fa-solid fa-grid-2"></i> Our Services
+        </a>
+      </div>
+
+      <div class="hero-stats animate-hero" style="--delay: 1.2s">
+        <div class="stat-item">
+          <span class="stat-number" data-target="100">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Campaigns Delivered</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="10">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Australian Clients</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="24">0</span><span class="stat-suffix">/7</span>
+          <span class="stat-label">Dedicated Support</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-tag animate-on-scroll">
+            <i class="fa-solid fa-building"></i> Who We Are
+          </span>
+          <h2 class="section-title animate-on-scroll">
+            We Are <span class="gradient-text">Desk Mate</span>
+          </h2>
+          <p class="about-lead animate-on-scroll">
+            A full-service marketing agency dedicated to helping Australian businesses achieve extraordinary
+            growth through innovative strategies, creative solutions, and cutting-edge technology.
+          </p>
+          <p class="about-text animate-on-scroll">
+            At Desk Mate, we combine digital marketing expertise with creative excellence to deliver campaigns that
+            generate real, measurable results. From lead generation and SEO to AI automation and app development — our
+            comprehensive suite of services ensures your business stays ahead of the competition.
+          </p>
+          <div class="about-features animate-on-scroll">
+            <div class="about-feature">
+              <div class="feature-icon"><i class="fa-solid fa-bullseye"></i></div>
+              <div>
+                <h4>Full-Service Solutions</h4>
+                <p>12+ specialized services from digital marketing to AI automation</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div>
+                <h4>Measurable Results</h4>
+                <p>Transparent reporting with real-time analytics and KPI tracking</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="feature-icon"><i class="fa-solid fa-handshake"></i></div>
+              <div>
+                <h4>Dedicated Partnership</h4>
+                <p>Your goals become our mission, we grow when you grow</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual animate-on-scroll">
+          <div class="about-card-stack">
+            <div class="about-stat-card card-1">
+              <i class="fa-solid fa-rocket"></i>
+              <div class="about-card-number" data-target="100">0</div>
+              <div class="about-card-label">Projects Delivered</div>
+            </div>
+            <div class="about-stat-card card-2">
+              <i class="fa-solid fa-users"></i>
+              <div class="about-card-number" data-target="12">0</div>
+              <div class="about-card-label">Services Offered</div>
+            </div>
+            <div class="about-stat-card card-3">
+              <i class="fa-solid fa-trophy"></i>
+              <div class="about-card-number" data-target="1">0</div>
+              <div class="about-card-label">Years of Excellence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag animate-on-scroll">
+          <i class="fa-solid fa-cogs"></i> What We Do
+        </span>
+        <h2 class="section-title animate-on-scroll">
+          Our <span class="gradient-text">Services</span>
+        </h2>
+        <p class="section-desc animate-on-scroll">
+          Comprehensive marketing solutions designed to accelerate your business growth and maximize your ROI.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll" style="--delay: 0.05s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3>Virtual Assistant</h3>
+          <p>Dedicated remote support for administrative and operational tasks. Free up your team to focus on what
+            matters most — growing your business.</p>
+          <div class="service-tag">Core</div>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="--delay: 0.1s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-magnet"></i>
+          </div>
+          <h3>Lead Generation</h3>
+          <p>Targeted outreach campaigns to generate high-quality, qualified leads for your business pipeline. We
+            identify decision-makers and create opportunities.</p>
+          <div class="service-tag">Most Popular</div>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="--delay: 0.15s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+          <h3>Telemarketing</h3>
+          <p>Strategic outbound calling campaigns with proven conversion methodologies. We connect you with
+            the right prospects at the right time.</p>
+          <div class="service-tag">High ROI</div>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="--delay: 0.2s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3>Data &amp; CRM Management</h3>
+          <p>Accurate data processing and CRM maintenance for clean, actionable databases. Keep your customer
+            information organized, segmented, and up-to-date.</p>
+          <div class="service-tag">Accuracy</div>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="--delay: 0.25s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-film"></i>
+          </div>
+          <h3>Video Editing</h3>
+          <p>Professional video editing for social media, ads, and brand storytelling. We transform raw footage into
+            compelling visual content that drives engagement.</p>
+          <div class="service-tag">Creative</div>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="--delay: 0.3s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Modern, responsive websites built to convert visitors into customers. From landing pages to full-stack web
+            apps — we craft your digital presence.</p>
+          <div class="service-tag service-tag-new">New</div>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="--delay: 0.35s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-building"></i>
+          </div>
+          <h3>Back Office Support</h3>
+          <p>End-to-end back office operations including data entry, accounting support, and administrative tasks.
+            Streamline your operations and reduce overhead.</p>
+          <div class="service-tag">Flexible</div>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="--delay: 0.4s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <h3>AI Automation</h3>
+          <p>Leverage artificial intelligence to automate workflows, chatbots, and business processes. Save time, cut
+            costs, and scale effortlessly with smart automation.</p>
+          <div class="service-tag service-tag-trending">Trending</div>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="--delay: 0.45s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-mobile-screen"></i>
+          </div>
+          <h3>App Design &amp; Development</h3>
+          <p>Custom mobile and web applications designed for seamless user experiences. From concept to launch, we build
+            apps that users love.</p>
+          <div class="service-tag">Innovation</div>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="--delay: 0.5s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-bullhorn"></i>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Results-driven digital marketing across social media, PPC, email campaigns, and content marketing.
+            Amplify your brand reach and drive conversions.</p>
+          <div class="service-tag">Growth</div>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="--delay: 0.55s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+          <h3>SEO Expert</h3>
+          <p>Dominate search engine rankings with our proven SEO strategies. On-page optimization, link building, and
+            technical SEO to drive organic traffic.</p>
+          <div class="service-tag">Enterprise</div>
+        </div>
+
+        <div class="service-card animate-on-scroll" style="--delay: 0.6s">
+          <div class="service-icon-wrap">
+            <i class="fa-solid fa-calendar-check"></i>
+          </div>
+          <h3>Appointment Setting</h3>
+          <p>Professional scheduling of high-value meetings with key decision-makers. We fill your calendar with
+            qualified prospects ready to discuss your solutions.</p>
+          <div class="service-tag">Revenue</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section id="why-us" class="section why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag animate-on-scroll">
+          <i class="fa-solid fa-star"></i> Why Desk Mate
+        </span>
+        <h2 class="section-title animate-on-scroll">
+          Why Choose <span class="gradient-text">Us</span>
+        </h2>
+        <p class="section-desc animate-on-scroll">
+          We don't just deliver services — we build partnerships, drive results, and become an extension of your team.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card animate-on-scroll" style="--delay: 0.1s">
+          <div class="why-number">01</div>
+          <i class="fa-solid fa-earth-oceania"></i>
+          <h3>Australian Market Experts</h3>
+          <p>Deep understanding of the Australian business landscape, culture, and consumer behavior. We speak your
+            market's language.</p>
+        </div>
+        <div class="why-card animate-on-scroll" style="--delay: 0.2s">
+          <div class="why-number">02</div>
+          <i class="fa-solid fa-user-graduate"></i>
+          <h3>Skilled & Experienced Team</h3>
+          <p>Every team member brings specialized expertise — from digital marketing and SEO to AI and app development.
+            Quality is in our DNA.</p>
+        </div>
+        <div class="why-card animate-on-scroll" style="--delay: 0.3s">
+          <div class="why-number">03</div>
+          <i class="fa-solid fa-chart-pie"></i>
+          <h3>Transparent Analytics</h3>
+          <p>Real-time dashboards, detailed reports, and full visibility into campaign performance. No guesswork — just
+            data.</p>
+        </div>
+        <div class="why-card animate-on-scroll" style="--delay: 0.4s">
+          <div class="why-number">04</div>
+          <i class="fa-solid fa-arrows-up-down-left-right"></i>
+          <h3>Scalable On Demand</h3>
+          <p>Need one service or all twelve? Scale up or down instantly. We adapt to your business needs and
+            budget.</p>
+        </div>
+        <div class="why-card animate-on-scroll" style="--delay: 0.5s">
+          <div class="why-number">05</div>
+          <i class="fa-solid fa-coins"></i>
+          <h3>Cost-Effective Excellence</h3>
+          <p>Premium quality at competitive rates. Get agency-level marketing without the agency-level price
+            tag.</p>
+        </div>
+        <div class="why-card animate-on-scroll" style="--delay: 0.6s">
+          <div class="why-number">06</div>
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>100% Satisfaction Guarantee</h3>
+          <p>Our track record speaks for itself. Every Australian client we've worked with recommends us — and we intend
+            to keep it that way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO / OUR WORK ========== -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag animate-on-scroll">
+          <i class="fa-solid fa-briefcase"></i> Our Work
+        </span>
+        <h2 class="section-title animate-on-scroll">
+          Success <span class="gradient-text">Stories</span>
+        </h2>
+        <p class="section-desc animate-on-scroll">
+          Real campaigns. Real results. See how we've helped Australian businesses achieve their growth targets.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card animate-on-scroll" style="--delay: 0.1s">
+          <div class="portfolio-header">
+            <div class="portfolio-icon"><i class="fa-solid fa-house-chimney"></i></div>
+            <span class="portfolio-industry">Real Estate</span>
+          </div>
+          <h3>Lead Generation Campaign</h3>
+          <p class="portfolio-challenge"><strong>Challenge:</strong> A leading Sydney real estate agency needed a
+            consistent pipeline of qualified property investor leads.</p>
+          <p class="portfolio-solution"><strong>Solution:</strong> Deployed a 10-agent outbound calling team with a
+            custom-scripted approach targeting high-net-worth individuals.</p>
+          <div class="portfolio-results">
+            <div class="result-item">
+              <span class="result-number">300+</span>
+              <span class="result-label">Qualified Leads</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">30</span>
+              <span class="result-label">Days</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">4.2x</span>
+              <span class="result-label">ROI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll" style="--delay: 0.2s">
+          <div class="portfolio-header">
+            <div class="portfolio-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <span class="portfolio-industry">Insurance</span>
+          </div>
+          <h3>Appointment Setting Program</h3>
+          <p class="portfolio-challenge"><strong>Challenge:</strong> An Australian insurance broker needed consistent
+            appointments with SME decision-makers across Victoria.</p>
+          <p class="portfolio-solution"><strong>Solution:</strong> Created a targeted B2B outreach program with warm
+            lead nurturing and CRM integration for seamless handoff.</p>
+          <div class="portfolio-results">
+            <div class="result-item">
+              <span class="result-number">150</span>
+              <span class="result-label">Appointments/Mo</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">68%</span>
+              <span class="result-label">Show Rate</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">3.8x</span>
+              <span class="result-label">ROI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-card animate-on-scroll" style="--delay: 0.3s">
+          <div class="portfolio-header">
+            <div class="portfolio-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <span class="portfolio-industry">SaaS / Technology</span>
+          </div>
+          <h3>B2B Outreach &amp; Sales Pipeline</h3>
+          <p class="portfolio-challenge"><strong>Challenge:</strong> A Melbourne-based SaaS company needed to break into
+            the enterprise market across Australia and New Zealand.</p>
+          <p class="portfolio-solution"><strong>Solution:</strong> Built a multi-touch outreach campaign combining cold
+            calling, follow-ups, and survey-driven lead qualification.</p>
+          <div class="portfolio-results">
+            <div class="result-item">
+              <span class="result-number">40%</span>
+              <span class="result-label">Conversion ↑</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">$2.1M</span>
+              <span class="result-label">Pipeline</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">5.1x</span>
+              <span class="result-label">ROI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TEAM SECTION ========== -->
+  <section id="team" class="section team">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag animate-on-scroll">
+          <i class="fa-solid fa-users"></i> Our People
+        </span>
+        <h2 class="section-title animate-on-scroll">
+          Meet The <span class="gradient-text">Team</span>
+        </h2>
+        <p class="section-desc animate-on-scroll">
+          Behind every successful campaign is a dedicated team of passionate professionals committed to your success.
+        </p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card team-card-rise animate-on-scroll" style="--delay: 0.1s">
+          <div class="team-photo-wrapper">
+            <div class="team-photo-backdrop"></div>
+            <img src="assets/CEO_SEO.png" alt="CEO & Co-Founder" class="team-photo" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h3> Sawban Enan</h3>
+            <span class="team-role">CEO & Co-Founder</span>
+            <p class="team-bio">Visionary leader driving business strategy and marketing excellence across all
+              verticals.</p>
+          </div>
+        </div>
+
+        <div class="team-card team-card-rise animate-on-scroll" style="--delay: 0.2s">
+          <div class="team-photo-wrapper">
+            <div class="team-photo-backdrop"></div>
+            <img src="assets/CTO.png" alt="Co-Founder & CTO" class="team-photo" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h3>Mohammad Talha</h3>
+            <span class="team-role">Co-Founder & CTO</span>
+            <p class="team-bio">Technical architect driving innovation in AI automation, web, and app development.</p>
+          </div>
+        </div>
+
+        <div class="team-card team-card-rise animate-on-scroll" style="--delay: 0.3s">
+          <div class="team-photo-wrapper">
+            <div class="team-photo-backdrop"></div>
+            <img src="assets/COFounder.png" alt="Co-Founder" class="team-photo" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h3>Junaid Affan</h3>
+            <span class="team-role">Co-Founder</span>
+            <p class="team-bio">Strategic thinker driving business growth, marketing operations, and client
+              partnerships.</p>
+          </div>
+        </div>
+        <div class="team-card team-card-rise animate-on-scroll" style="--delay: 0.5s">
+          <div class="team-photo-wrapper">
+            <div class="team-photo-backdrop"></div>
+            <img src="assets/Quality_Assurance_Lead.png" alt="Quality Assurance Lead" class="team-photo" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h3>Nishat Tasnim</h3>
+            <span class="team-role">Quality Assurance Lead</span>
+            <p class="team-bio">Ensures every deliverable meets our premium quality standards across all services.</p>
+          </div>
+        </div>
+        <div class="team-card team-card-rise animate-on-scroll" style="--delay: 0.4s">
+          <div class="team-photo-wrapper">
+            <div class="team-photo-backdrop"></div>
+            <img src="assets/Team_Lead.png" alt="Team Lead" class="team-photo" loading="lazy">
+          </div>
+          <div class="team-info">
+            <h3>Afifa Mariam</h3>
+            <span class="team-role">Team Lead</span>
+            <p class="team-bio">Leads our operations division with a track record of exceeding client targets.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag animate-on-scroll">
+          <i class="fa-solid fa-quote-left"></i> Client Reviews
+        </span>
+        <h2 class="section-title animate-on-scroll">
+          What Our <span class="gradient-text">Clients</span> Say
+        </h2>
+        <p class="section-desc animate-on-scroll">
+          Don't just take our word for it hear from the Australian businesses we've helped grow.
+        </p>
+      </div>
+
+      <div class="testimonial-carousel animate-on-scroll">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Desk Mate transformed our lead generation process. Their outbound team
+              consistently delivers high-quality leads that convert. We've seen a 4x return on our investment within the
+              first quarter."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" data-initials="JM"></div>
+              <div>
+                <strong>James Mitchell</strong>
+                <span>CEO, Sydney Property Group</span>
+                <span class="author-flag">🇦🇺 Sydney, Australia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"The appointment setting service is phenomenal. Our sales team's calendar is
+              consistently full with qualified prospects. Desk Mate's agents are professional, persistent, and perfectly
+              trained."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" data-initials="SW"></div>
+              <div>
+                <strong>Sarah Williams</strong>
+                <span>Director, Melbourne Insurance Partners</span>
+                <span class="author-flag">🇦🇺 Melbourne, Australia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"We were skeptical about outsourcing our telemarketing, but Desk Mate exceeded
+              all expectations. Their understanding of the Australian market is unmatched. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" data-initials="DT"></div>
+              <div>
+                <strong>David Thompson</strong>
+                <span>Founder, Brisbane Tech Solutions</span>
+                <span class="author-flag">🇦🇺 Brisbane, Australia</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-text">"Five stars isn't enough for Desk Mate. Their virtual assistant and data
+              management services saved us thousands in operational costs. They feel like part of our own team."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" data-initials="LK"></div>
+              <div>
+                <strong>Lisa Kowalski</strong>
+                <span>Operations Head, Perth Logistics Co.</span>
+                <span class="author-flag">🇦🇺 Perth, Australia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-controls">
+          <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous testimonial">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next testimonial">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING SECTION ========== -->
+  <section id="pricing" class="section pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag animate-on-scroll">
+          <i class="fa-solid fa-tags"></i> Our Plans
+        </span>
+        <h2 class="section-title animate-on-scroll">
+          Simple, Transparent <span class="gradient-text">Pricing</span>
+        </h2>
+        <p class="section-desc animate-on-scroll">
+          Choose the plan that fits your business. No hidden fees, no long-term contracts just results.
+        </p>
+      </div>
+
+      <div class="pricing-toggle animate-on-scroll">
+        <span class="toggle-label" id="toggleMonthly">Monthly</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="billingToggle">
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="toggle-label" id="toggleAnnual">Annual</span>
+        <span class="toggle-badge">Save 20%</span>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Starter Plan -->
+        <div class="pricing-card animate-on-scroll" style="--delay: 0.1s">
+          <div class="pricing-card-header">
+            <div class="pricing-icon"><i class="fa-solid fa-seedling"></i></div>
+            <h3>Starter</h3>
+            <p class="pricing-subtitle">Perfect for small businesses getting started</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount" data-monthly="499" data-annual="450">499</span>
+            <span class="price-period" data-monthly="month" data-annual="year">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Up to 500 outbound calls/month</li>
+            <li><i class="fa-solid fa-check"></i> Lead generation campaigns</li>
+            <li><i class="fa-solid fa-check"></i> Basic reporting dashboard</li>
+            <li><i class="fa-solid fa-check"></i> 1 dedicated agent</li>
+            <li><i class="fa-solid fa-check"></i> Email support</li>
+            <li class="feature-disabled"><i class="fa-solid fa-xmark"></i> Appointment setting</li>
+            <li class="feature-disabled"><i class="fa-solid fa-xmark"></i> CRM integration</li>
+            <li class="feature-disabled"><i class="fa-solid fa-xmark"></i> Dedicated account manager</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-pricing">Get Started</a>
+        </div>
+
+        <!-- Growth Plan (Popular) -->
+        <div class="pricing-card pricing-card-popular animate-on-scroll" style="--delay: 0.2s">
+          <div class="pricing-popular-badge">Most Popular</div>
+          <div class="pricing-card-header">
+            <div class="pricing-icon"><i class="fa-solid fa-rocket"></i></div>
+            <h3>Growth</h3>
+            <p class="pricing-subtitle">For businesses ready to scale rapidly</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-currency">$</span>
+            <span class="price-amount" data-monthly="999" data-annual="799">999</span>
+            <span class="price-period" data-monthly="month" data-annual="year">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Up to 2,000 outbound calls/month</li>
+            <li><i class="fa-solid fa-check"></i> Lead generation + appointment setting</li>
+            <li><i class="fa-solid fa-check"></i> Advanced analytics dashboard</li>
+            <li><i class="fa-solid fa-check"></i> 3 dedicated agents</li>
+            <li><i class="fa-solid fa-check"></i> CRM integration</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated account manager</li>
+            <li><i class="fa-solid fa-check"></i> Priority email & phone support</li>
+            <li class="feature-disabled"><i class="fa-solid fa-xmark"></i> Custom integrations</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-pricing">Get Started</a>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="pricing-card animate-on-scroll" style="--delay: 0.3s">
+          <div class="pricing-card-header">
+            <div class="pricing-icon"><i class="fa-solid fa-building"></i></div>
+            <h3>Enterprise</h3>
+            <p class="pricing-subtitle">Custom solutions for large organizations</p>
+          </div>
+          <div class="pricing-price">
+            <span class="price-amount price-custom">Custom</span>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fa-solid fa-check"></i> Unlimited outbound calls</li>
+            <li><i class="fa-solid fa-check"></i> Full-service telemarketing suite</li>
+            <li><i class="fa-solid fa-check"></i> Real-time reporting & analytics</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated agent team (5+)</li>
+            <li><i class="fa-solid fa-check"></i> Custom CRM & API integrations</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated account manager</li>
+            <li><i class="fa-solid fa-check"></i> 24/7 priority support</li>
+            <li><i class="fa-solid fa-check"></i> Website design included</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-pricing">Contact Us</a>
+        </div>
+      </div>
+
+      <p class="pricing-note animate-on-scroll">
+        All plans include a <strong>7-day free trial</strong>. No credit card required. Cancel anytime.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag animate-on-scroll">
+          <i class="fa-solid fa-paper-plane"></i> Get In Touch
+        </span>
+        <h2 class="section-title animate-on-scroll">
+          Let's <span class="gradient-text">Connect</span>
+        </h2>
+        <p class="section-desc animate-on-scroll">
+          Ready to grow your business? Drop us a message or reach out directly we'd love to hear from you.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info animate-on-scroll">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email Us</h4>
+              <a href="mailto:daskmate2025@gmail.com">daskmate2025@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Call Us</h4>
+              <a href="tel:+8801835064233">+880 1835 064 233</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <h4>WhatsApp</h4>
+              <a href="https://wa.me/8801835064233" target="_blank">Chat on WhatsApp</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Business Hours</h4>
+              <span>Mon–Fri: 7:00 AM – 7:00 PM (GMT+6)</span>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form animate-on-scroll" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="formName">Full Name</label>
+              <input type="text" id="formName" name="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="formEmail">Email Address</label>
+              <input type="email" id="formEmail" name="email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="formPhone">Phone Number</label>
+              <input type="tel" id="formPhone" name="phone" placeholder="+61 4XX XXX XXX">
+            </div>
+            <div class="form-group">
+              <label for="formService">Service Interested In</label>
+              <select id="formService" name="service">
+                <option value="">Select a service...</option>
+                <option value="va">Virtual Assistant</option>
+                <option value="lead-gen">Lead Generation</option>
+                <option value="telemarketing">Telemarketing</option>
+                <option value="data-crm">Data & CRM Management</option>
+                <option value="video">Video Editing</option>
+                <option value="web-dev">Web Development</option>
+                <option value="back-office">Back Office Support</option>
+                <option value="ai">AI Automation</option>
+                <option value="app-dev">App Design & Development</option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="seo">SEO Expert</option>
+                <option value="appointment">Appointment Setting</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="formCompany">Company Name</label>
+            <input type="text" id="formCompany" name="company" placeholder="Your Company Pty Ltd">
+          </div>
+          <div class="form-group">
+            <label for="formMessage">Message</label>
+            <textarea id="formMessage" name="message" rows="5"
+              placeholder="Tell us about your project and goals..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-submit">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>Thank you! We've received your message and will get back to you within 24 hours.</p>
+          </div>
+          <div class="form-error" id="formError">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Oops! Something went wrong. Please try again or email us directly.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <div class="logo-icon">
+              <span class="logo-d">D</span><span class="logo-m">M</span>
+            </div>
+            <div class="logo-text-group">
+              <span class="logo-name">DESK <span class="logo-highlight">MATE</span></span>
+            </div>
+          </div>
+          <p>Your trusted marketing agency driving growth for Australian businesses. Strategy. Marketing. Growth.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#team">Our Team</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="#services">Lead Generation</a>
+          <a href="#services">Digital Marketing</a>
+          <a href="#services">Web Development</a>
+          <a href="#services">AI Automation</a>
+          <a href="#services">SEO Expert</a>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <a href="mailto:daskmate2025@gmail.com"><i class="fa-solid fa-envelope"></i> daskmate2025@gmail.com</a>
+          <a href="tel:+8801835064233"><i class="fa-solid fa-phone"></i> +880 1835 064 233</a>
+          <a href="https://wa.me/8801835064233" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Desk Mate. All Rights Reserved. | Strategy. Marketing. Growth.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLOATING BUTTON ========== -->
+  <a href="https://wa.me/8801835064233" class="whatsapp-float" id="whatsappFloat" target="_blank"
+    rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us!</span>
+  </a>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
